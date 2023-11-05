@@ -1,0 +1,52 @@
+---
+title: "Arbeidskrav 6: Analyse av repeterte forsøk"
+format: html
+editor: visual
+---
+
+## Introduksjon
+
+Introdusere felt med
+
+## Metode
+
+### Deltakere
+
+For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn en styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening
+
+### Trenings intervensjon
+
+For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november.
+
+### Studieoversikt
+
+### Tester
+
+### Dataanalyse og statistikk
+
+## Resultat
+
+## Diskusjon
+
+## Referanser
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
