@@ -1,0 +1,46 @@
+
+#Sort interesting variables and make a data set with strength change variable in %
+
+```{r}
+str.dat <- strengthvolume %>%
+  filter(!is.na(load)) %>%
+  group_by(exercise) %>%
+  mutate(scaled.load = load / max(load, na.rm = TRUE)) %>%
+  group_by(participant, time, sex, sets) %>%
+  summarise(combined.load = mean(scaled.load, na.rm = TRUE)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = time,
+              values_from = combined.load) %>%
+  mutate(change_perc = ((post - pre) / pre) * 100) 
+  
+```
+
+
+Tabell 3: Gjennomsnittlig forandring i styrke frå 3 til 1 set
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+str.dat %>%    
+  filter(!is.na(post)) %>%
+  group_by(sets) %>%
+  summarise(m = mean(change_perc),
+            sd = sd(change_perc)) %>%
+  mutate(sets = factor(sets, levels = c("multiple", "single"),
+                       labels = c("3 sets", "1 sets"))) %>%
+  mutate(ms = paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
+  gt() %>% 
+  tab_header(
+    title = "Tabell 3: Gjennomsnittlig forandring i styrke frå 3 til 1 set",
+    subtitle = "Målt i prosent") %>% 
+  fmt_number(columns = c(m, sd), decimals = 0) %>% 
+  fmt_percent(columns = c(m, sd), decimals = 2) %>% 
+  cols_label(sets = "Set", ms = "% forandring(SD)") %>% 
+  cols_hide(columns = c(m, sd)) %>% 
+  tab_footnote("Gjennomsnitlig forandring i % (SD for 3 sets og 1 set).")
+```
+  
+  
+  

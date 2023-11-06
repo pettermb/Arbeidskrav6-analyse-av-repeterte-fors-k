@@ -1,12 +1,16 @@
 ---
 title: "Arbeidskrav 6: Analyse av repeterte forsøk"
-format: html
+format: pdf
 editor: visual
 ---
 
 ## Introduksjon
 
 Introdusere felt med
+
+Målet med denne studien:
+
+Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrophy og fibertype samensetning. Når personen gjennomføre denne styrkeprotokollen, så ønsket en å sammenligne effekten av de to volumbetingelsene på fosforylering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA.
 
 ## Metode
 
@@ -16,15 +20,45 @@ For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier
 
 ### Trenings intervensjon
 
-For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november.
-
-### Studieoversikt
+For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, situps og back-exstensions og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.
 
 ### Tester
+
+For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsier av muskelvev, immunhistokjemi, protein uthening
+
+Muskelstyrke
+
+For å teste den ensidige isokinetiske og ismetrice muskelstyrken ble det brukt dynammoeter. Den iskinetic token ble målt med tre vinkel hastigeter på 60, 120 og 140 grader). For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
+
+Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet seperat i beinpress maskin. Det ble også gjort 1 RM knee exstensjons maksin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble d
 
 ### Dataanalyse og statistikk
 
 ## Resultat
+
+Utregning av parret t-test av lean mass
+
+Paired t-testdata: datlean$multiple and datlean$singlet = 2.1875, df = 33, p-value = 0.0359alternative hypothesis: true mean difference is not equal to 095 percent confidence interval: 8.586109 237.002126sample estimates:mean difference 122.7941
+
+```{r}
+str.dat %>%    
+  filter(!is.na(post)) %>%
+  group_by(sets) %>%
+  summarise(m = mean(change_perc),
+            sd = sd(change_perc)) %>%
+  mutate(sets = factor(sets, levels = c("multiple", "single"),
+                       labels = c("3 sets", "1 sets"))) %>%
+  mutate(ms = paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
+  gt() %>% 
+  tab_header(
+    title = "Tabell 3: Gjennomsnittlig forandring i styrke frå 3 til 1 set",
+    subtitle = "Målt i prosent") %>% 
+  fmt_number(columns = c(m, sd), decimals = 0) %>% 
+  fmt_percent(columns = c(m, sd), decimals = 2) %>% 
+  cols_label(sets = "Set", ms = "% forandring(SD)") %>% 
+  cols_hide(columns = c(m, sd)) %>% 
+  tab_footnote("Gjennomsnitlig forandring i % (SD for 3 sets og 1 set).")
+```
 
 ## Diskusjon
 
