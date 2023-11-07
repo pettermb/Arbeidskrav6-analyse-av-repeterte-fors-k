@@ -30,7 +30,19 @@ Muskelstyrke
 
 For å teste den ensidige isokinetiske og ismetrice muskelstyrken ble det brukt dynammoeter. Den iskinetic token ble målt med tre vinkel hastigeter på 60, 120 og 140 grader). For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
 
-Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet seperat i beinpress maskin. Det ble også gjort 1 RM knee exstensjons maksin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble d
+Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet seperat i beinpress maskin. Det ble også gjort 1 RM knee exstensjons maksin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste økt.å
+
+Muskel tverrsnitt og kroppsamesetning
+
+En var i denne studien heldig å fikk bruke MRI til å undersøker tverrsnittet av knekstensorene. En så i dette tilfellet på vastus lateralis, medjalis, intermedius og rectus femoris. Dette ble gjort både før og etter trenings intervensjonen. En fikk gjort personenes kroppsammensenting ved bruk av DXA. Før både dxa og mri ble forsøkspersone bedt å faste for 2 timer og ingen hard fysisk aktivitet 48 timer før testene.
+
+Måling av hormoner
+
+En gjorde hormonelle målinger ut i fra blodprøver tatt på 5 tidspunkt samtidig som biopsi og 10 min etter den siste trenings. Etter å ha vert i romtempratur i 30 min, ble de sentrifugert (1500 g, 10 min) Etter sentrigugering ble serumet umiddelbart alikvotert og fryst ned til -80 grader. En gjorde målinger av blodprøvene i en Immunoassay System. Her ble det gjort målinger av totalt testosteron, cortisol, vekst hormon og insulin lik vekst faktor 1(IGF-1). Det blei også gjort prøver for å ansla vitamin d både før og etter.
+
+Muskel biopsi
+
+Biopsier ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsy instrument. Det ble gjort tiltak for å sikre en best mulig reabilitet, med prøver på samme tidspunkt og at en hadde standarisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
 
 ### Dataanalyse og statistikk
 
@@ -41,6 +53,7 @@ Utregning av parret t-test av lean mass
 Paired t-testdata: datlean$multiple and datlean$singlet = 2.1875, df = 33, p-value = 0.0359alternative hypothesis: true mean difference is not equal to 095 percent confidence interval: 8.586109 237.002126sample estimates:mean difference 122.7941
 
 ```{r}
+#| echo: true
 str.dat %>%    
   filter(!is.na(post)) %>%
   group_by(sets) %>%

@@ -3,7 +3,7 @@ title: "dataprepp"
 format: html
 editor: visual
 ---
-Kode for datasettet
+Kode for datasettet 
 ```{r}
 library(exscidata)
 data("dxadata"); data("strengthvolume")
@@ -29,14 +29,15 @@ dxadata %>%
 
 Utrening av pared t-test av lean mass
 ```{r}
-#| echo: FALSE
-#| warning: FALSE
-#| message: FALSE
-#| include: FALSE
+#| echo: false
+#| warning: false
+#| message: false
+#| include: true
+#| fig-cap: Utregning av t-test
 
 #### LEAN MASS
 
-library(tidyverse); library(exscidata); library(lme4)
+library(tidyverse); library(exscidata); library(lme4); library(gt)
 
 # sett opp nytt data sett
 datlean <- dxadata %>%
@@ -68,9 +69,32 @@ datlean <- dxadata %>%
 t.test(datlean$multiple, datlean$single, paired = TRUE)
 ```
 
-```
-
 ```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| include: true
+#| fig-cap: Figur 1: Forandring i lean mass fra pre til post test, single vs. multipe sets
 
+data("dxadata")
+
+dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg",
+               values_to = "lean.mass",
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg =="lean.left_leg", "L", "R"),
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+  filter(time %in% c("pre", "post")) %>%
+  group_by(time, sets) %>%
+  summarise(m=mean(lean.mass)) %>%
+  mutate(time = factor(time, levels = c("pre", "post"))) %>%
+  ggplot(aes(time, m, color =sets,
+             group =sets)) + geom_line() +
+  labs(x = "Tid ",
+       y = "Lean mass",
+       color = "Set")
 ```
+
 

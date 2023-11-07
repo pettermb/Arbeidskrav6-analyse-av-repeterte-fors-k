@@ -1,7 +1,14 @@
 
-#Sort interesting variables and make a data set with strength change variable in %
+#Sort interesting variables and make a data set with strength change variabl
+brukes i den tabbel 3 mot 1.
 
 ```{r}
+#| label:styrke
+#| echo:false
+#| fig-cap:"test"
+#| echo:fals
+#| warning:fals
+#| message:false
 str.dat <- strengthvolume %>%
   filter(!is.na(load)) %>%
   group_by(exercise) %>%
@@ -20,9 +27,12 @@ Tabell 3: Gjennomsnittlig forandring i styrke frå 3 til 1 set
 
 
 ```{r}
-#| echo: false
-#| warning: false
-#| message: false
+#| label:styrke
+#| echo:false
+#| fig-cap:"test 2"
+#| echo:false
+#| warning:fals
+#| message:false
 str.dat %>%    
   filter(!is.na(post)) %>%
   group_by(sets) %>%
@@ -42,5 +52,41 @@ str.dat %>%
   tab_footnote("Gjennomsnitlig forandring i % (SD for 3 sets og 1 set).")
 ```
   
+  Anova
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+m2 <- lm(post ~ pre + sets, data = str.dat)
+
+summary(m2)
+plot(m2)
+```
+  
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+str.mod <- strengthvolume %>%
+  group_by(exercise) %>%
+  mutate(scaled.load =load/max(load,na.rm = TRUE)) %>%
+  group_by(participant, time, sex, sets) %>%
+  summarise(combined.load = mean(scaled.load, na.rm = TRUE)) %>%
+  ungroup()
+
+str.mod %>%
+  filter(!is.na(combined.load), time == factor(time, levels = c("pre", "post"))) %>%
+  mutate(time = factor(time, levels = c("pre", "post")),
+         group = factor(sets, levels = c("Single", "Multiple"))) %>%
+ ggplot(aes(time, combined.load, group = paste(participant, sets), color = sets)) + geom_line() + theme_bw() + labs(title = "Tabell 4: Forandring i styrke",
+       y = "Forandring i styrke (kombinert belastning)",
+       x = "Tid",
+       caption = "Tabell 4: Viser forskjellen mellom multiple and single set på styrke forandring.")
+```
+                            
+```
   
   
