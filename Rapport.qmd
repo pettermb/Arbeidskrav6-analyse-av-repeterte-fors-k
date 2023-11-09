@@ -6,94 +6,138 @@ editor: visual
 
 ## Introduksjon
 
-Introdusere felt med
+Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrofi og fibertype sammensetning. For å kunne ha en bedre forståelse for hva som skjer i disse tilfellene ønsker en også å sammenligne effekten av de to volumbetingelsene på fosforilering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA. Dette vill alle gi oss en bedre forstålese i for utviklingen i det å trene enkle og flere sett trening.
 
-Målet med denne studien:
-
-Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrophy og fibertype samensetning. Når personen gjennomføre denne styrkeprotokollen, så ønsket en å sammenligne effekten av de to volumbetingelsene på fosforylering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA.
+I dag er det
 
 ## Metode
 
 ### Deltakere
 
-For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn en styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening
+For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn en styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening.
 
 ### Trenings intervensjon
 
-For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, situps og back-exstensions og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.
+For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, sit-ups og back-extensions og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.
+
+Styrke øvelsene som ble gjennomført?
 
 ### Tester
 
-For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsier av muskelvev, immunhistokjemi, protein uthening
+For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsi av muskel vev, immunhistokjemi, protein analyse.
 
 Muskelstyrke
 
-For å teste den ensidige isokinetiske og ismetrice muskelstyrken ble det brukt dynammoeter. Den iskinetic token ble målt med tre vinkel hastigeter på 60, 120 og 140 grader). For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
+For å teste den ensidige isokinetiske og isometrice muskelstyrken ble det brukt dynamometer. Den iskinetic token ble målt med tre vinkel hastigheter på 60, 120 og 140 grader). For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
 
-Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet seperat i beinpress maskin. Det ble også gjort 1 RM knee exstensjons maksin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste økt.å
+Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet separat i beinpress maskin. Det ble også gjort 1 RM knee ekstensjons maskin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste
 
 Muskel tverrsnitt og kroppsamesetning
 
-En var i denne studien heldig å fikk bruke MRI til å undersøker tverrsnittet av knekstensorene. En så i dette tilfellet på vastus lateralis, medjalis, intermedius og rectus femoris. Dette ble gjort både før og etter trenings intervensjonen. En fikk gjort personenes kroppsammensenting ved bruk av DXA. Før både dxa og mri ble forsøkspersone bedt å faste for 2 timer og ingen hard fysisk aktivitet 48 timer før testene.
+En var i denne studien heldig å fikk bruke MRI til å undersøker tverrsnittet av kneekstensorene. En så i dette tilfellet på vastus lateralis, medjalis, intermedius og rectus femoris. Dette ble gjort både før og etter trenings intervensjonen. En fikk analysert analyse av personenes kropp sammensenting ved bruk av DXA. Før både DXA og MRI ble forsøkspersonen bedt å faste for 2 timer og ingen hard fysisk aktivitet 48 timer før testene.
 
 Måling av hormoner
 
-En gjorde hormonelle målinger ut i fra blodprøver tatt på 5 tidspunkt samtidig som biopsi og 10 min etter den siste trenings. Etter å ha vert i romtempratur i 30 min, ble de sentrifugert (1500 g, 10 min) Etter sentrigugering ble serumet umiddelbart alikvotert og fryst ned til -80 grader. En gjorde målinger av blodprøvene i en Immunoassay System. Her ble det gjort målinger av totalt testosteron, cortisol, vekst hormon og insulin lik vekst faktor 1(IGF-1). Det blei også gjort prøver for å ansla vitamin d både før og etter.
+En gjorde hormonelle målinger ut i fra blodprøver tatt på 5 tidspunkt samtidig som biopsi og 10 min etter den siste trenings. Etter å ha vert i romtemperatur i 30 min, ble de sentrifugert (1500 g, 10 min) Etter sentrifugering ble serumet umiddelbart ali kvotert og fryst ned til -80 grader. En gjorde målinger av blodprøvene i en Immunoassay System. Her ble det gjort målinger av totalt testosteron, kortisol, vekst hormon og insulin lik vekst faktor 1(IGF-1). Det blei også gjort prøver for å anslå vitamin D både før og etter styrketreningintervensjonen.
 
 Muskel biopsi
 
-Biopsier ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsy instrument. Det ble gjort tiltak for å sikre en best mulig reabilitet, med prøver på samme tidspunkt og at en hadde standarisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
+Biopisen ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsi instrument. Det ble gjort tiltak for å sikre en best mulig rehabilitere, med prøver på samme tidspunkt og at en hadde standardisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
 
 ### Dataanalyse og statistikk
 
 ## Resultat
 
+```{r}
+#| label: "Load packages and data"
+#| warning: false
+#| message: false
+#| echo: false
+#| output: fals
+
+
+
+library(tidyverse); library(exscidata)
+library(lme4)
+## Import data set, extract leg lean mass per leg and remove observations
+# that are include == "excl".
+
+leanmass <- dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.mass", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+  filter(include == "incl") %>%
+  
+  ## Change levels for time and sets
+  mutate(time = factor(time, levels = c("pre", "post")), 
+         sets = factor(sets, levels = c("single", "multiple")), 
+         leg = paste0(participant, leg)) %>%
+  
+  print()
+# Create a wide data set of change scores per volume condition
+# suitable for a t-test
+leanmass_change_wide <- leanmass %>%
+  pivot_wider(names_from = time, values_from = lean.mass) %>%
+  mutate(change = post - pre) %>%
+  
+  select(participant, sex, sets, change) %>%
+  pivot_wider(names_from = sets, 
+              values_from = change) %>%
+  
+  mutate(diff = multiple - single) %>%
+  
+  print()
+leanmass_change_wide_time <- leanmass %>%
+  pivot_wider(names_from = time, values_from = lean.mass) %>%
+
+  select(participant, sex, sets, pre, post) %>%
+  
+  print()
+
+### Mixed effects model
+# A mixed effects model allowing for a random slope for time is very similar 
+# to the t-test used above. 
+
+m2 <- lmer(lean.mass ~ time * sets +( 1 + time |participant), 
+           data = leanmass)
+
+# Check the summary 
+summary(m2)
+# Check assumptions of equal residual variance
+plot(m2)
+
+## Mixed-Effects ANCOVA
+
+# The lm model does not contain information on multiple
+# observations per participant
+m3 <- lm(post ~ pre + sets, data = leanmass_change_wide_time)
+
+
+# A more correct model also include random intercepts per 
+# participant. Mixed effects ANCOVA mnodel:
+m4 <- lmer(post ~ pre + sets + (1|participant), 
+           data = leanmass_change_wide_time)
+
+
+summary(m3)
+
+summary(m4)
+
+
+
+```
+
+
+
 Utregning av parret t-test av lean mass
 
 Paired t-testdata: datlean$multiple and datlean$singlet = 2.1875, df = 33, p-value = 0.0359alternative hypothesis: true mean difference is not equal to 095 percent confidence interval: 8.586109 237.002126sample estimates:mean difference 122.7941
 
-```{r}
-#| echo: true
-str.dat %>%    
-  filter(!is.na(post)) %>%
-  group_by(sets) %>%
-  summarise(m = mean(change_perc),
-            sd = sd(change_perc)) %>%
-  mutate(sets = factor(sets, levels = c("multiple", "single"),
-                       labels = c("3 sets", "1 sets"))) %>%
-  mutate(ms = paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  gt() %>% 
-  tab_header(
-    title = "Tabell 3: Gjennomsnittlig forandring i styrke frå 3 til 1 set",
-    subtitle = "Målt i prosent") %>% 
-  fmt_number(columns = c(m, sd), decimals = 0) %>% 
-  fmt_percent(columns = c(m, sd), decimals = 2) %>% 
-  cols_label(sets = "Set", ms = "% forandring(SD)") %>% 
-  cols_hide(columns = c(m, sd)) %>% 
-  tab_footnote("Gjennomsnitlig forandring i % (SD for 3 sets og 1 set).")
-```
 
 ## Diskusjon
 
 ## Referanser
-
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
