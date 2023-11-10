@@ -11,13 +11,14 @@ bibliography: referanser/referanser.bib
 
 Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrofi og fibertype sammensetning. For å kunne ha en bedre forståelse for hva som skjer i disse tilfellene ønsker en også å sammenligne effekten av de to volumbetingelsene på fosforylering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA. Dette vill alle gi oss en bedre forstålese i for utviklingen i det å trene enkle og flere sett trening.
 
-I dag er det mye informasjon om trening der ute. Det er podekaster, ulike sosiale medier kanaler og det er selvopplevde erfaringer. Men det viktigste vi har å støtte oss på er forskingen som er med på å drive nye treningsmetoder framover. Denne studien tar for seg hva skjer viss en trener forskjellig antall sett i styrketrening, men hva seier litteraturen oss om dette emnet? Det er gjort en del tidligere forsking på hvordan en skal bygge opp sine styrke økter. Før vi kan diskutere om det er forskjell mellom ulike sett, så er det viktig å understreke hva vi er ute etter. Vi ønsker her å se på hva som gir en best framgang for trening, ikke om det gir framskritt eller ikke. Når vi ser forskjellen på 1 sett og 3 sett så er det tre sett som skaper en best framgang i 1 RM [@berger_response_2003] [@kramer_effects_1997]. Vi ser også at det er studier som har sett på enkle vs. flere sett der forsøkspersonen består i sin helhet av kvinner. I den ene studien viste ikke en like klar framgang som studien med mannlige forsøkspersoner. Studien viste framgang i 1RM for begge gruppen som både enkle sett og flere sett. Men vi må i denne studien stille spørsmål om det er forskjell mellom kvinner og men. Men denne rapporten inneholder en svak statistisk del, som gjør at det er usikker med å trekke konklusjoner ut fra denne rapporten [@kraemer_varied_1995]. Men ser vi på studier med kvinner som er gjort med en erfaring innenfor styrke. Finner vi noe av de samme resultatene som vi ser hos menn. I et hel kroppsprogram så en at fikk en overlegen styrke forbedring hos de som trente 3 sett i sammenligning med 1 sett [@schlumberger_single-_2001].
+I dag er det mye informasjon om trening der ute. Det er podekaster, ulike sosiale medier kanaler og det er selvopplevde erfaringer. Men det viktigste vi har å støtte oss på er forskingen som er med på å drive nye treningsmetoder framover. Denne studien tar for seg hva skjer viss en trener forskjellig antall sett i styrketrening, men hva seier litteraturen oss om dette emnet? Det er gjort en del tidligere forsking på hvordan en skal bygge opp sine styrke økter. Før vi kan diskutere om det er forskjell mellom ulike sett, så er det viktig å understreke hva vi er ute etter. Vi ønsker her å se på hva som gir en best framgang for trening, ikke om det gir framskritt eller ikke. Når vi ser forskjellen på 1 sett og 3 sett så er det tre sett som skaper en best framgang i 1 RM [@kramer_effects_1997], [@kelly_effect_2007] , [@radaelli_dose-response_2015] . Vi ser også at det er studier som har sett på enkle vs. flere sett der forsøkspersonen består i sin helhet av kvinner. I den ene studien viste ikke en like klar framgang som studien med mannlige forsøkspersoner. Studien viste framgang i 1RM for begge gruppen som både enkle sett og flere sett. Men vi må i denne studien stille spørsmål om det er forskjell mellom kvinner og menn. Men denne rapporten inneholder en svak statistisk del, som gjør at det er usikker med å trekke konklusjoner ut fra denne rapporten \[@kraemer_varied_1995\]. Men ser vi på studier med kvinner som er gjort med en erfaring innenfor styrke. Finner vi noe av de samme resultatene som vi ser hos menn. I et hel kropps program så en at fikk en overlegen styrke forbedring hos de som trente 3 sett i sammenligning med 1 sett [@schlumberger_single-_2001].
 
 ```{r}
-#| label: "setup"
-#| include: false
+#| label: "grunnlag"
+#| echo: false 
 #| warning: false
 #| message: false
+#| include: true
 
 library(tidyverse)
 library(exscidata)
@@ -85,15 +86,13 @@ dxadata %>%
 
 For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, sit-ups og rygg hev i maskin og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.
 
-**Styrke øvelsene som ble gjennomført?**
-
 ### Tester
 
 For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsi av muskel vev, immunhistokjemi, protein analyse.
 
 #### Muskelstyrke
 
-For å teste den ensidige isokinetiske og isometriske muskelstyrken ble det brukt dynamometer. Den iskinetic token ble målt med tre vinkel hastigheter på 60, 120 og 140 grader. For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
+For å teste den ensidige isokinetiske og isometriske muskelstyrken ble det brukt dynamometer. Den iskinetic torken ble målt med tre vinkel hastigheter på 60 grader, 120 og 140 grader. For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
 
 Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet separat i beinpress maskin. Det ble også gjort 1 RM kne ekstensjons maskin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste
 
@@ -107,11 +106,17 @@ En gjorde hormonelle målinger ut i fra blodprøver tatt på 5 tidspunkt samtidi
 
 #### Muskel biopsi
 
-Biopis ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsi instrument. Det ble gjort tiltak for å sikre en best mulig rehabilitere, med prøver på samme tidspunkt og at en hadde standardisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
+Biopis ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsi instrument(Bård Magnum, Bård, Rud, Norway). Det ble gjort tiltak for å sikre en best mulig rehabilitere, med prøver på samme tidspunkt og at en hadde standardisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
 
 ### Dataanalyse og statistikk
 
+Forsøkspersoner som ikke gjennomførte helle treningsperioden, ble ikke inkludert fra den statistiske analysen i etterkant av treningsperioden. Det ble brukt tosidig t-test for å sjekke forskjellene mellom gruppen som trente enkle sett og flere sett. Grafene ble framstilt som gjennomsnitt verdier med stander avvik.
+
 ## Resultat
+
+Når vi skal se på på resultatene i denne studien må vi ta med oss karakteristikkene til forsøksperiodene, der vi ser utviklingen av gjennomsnitts vekt fra pre til post. Denne må vi se i sammenheng med Figur 1 under som beskrive utviklingen i fett fri masse. Vi at forsøkspersonenes vekt blir mindre gjennom prosjektet. Dette kan vi se med at den fettfrie massen øker, gjennom hele prosjektet.
+
+Med en p - verdi på 0,0359 kan vi se en signifikant forskjell mellom det å trene enkle sett og det å trene flere sett.
 
 ```{r}
 #| warning: FALSE
@@ -173,7 +178,7 @@ dxadata %>%
 ```
 
 ```{r}
-#| label: Figur 2 Utvikling 1 RM kjenekstensjon
+#| label: Figur 2 Utvikling 1 RM knee ekstensjon
 #| echo: false 
 #| warning: false
 #| message: false
@@ -204,6 +209,13 @@ data %>%
   theme_classic()
 ```
 
-#### Diskusjon
+I figuren over ser vi 1 RM verdier i kne ekstensjon der en har gjort tester ved pre test, økt 1, i trenings uke 2, 5 og 9 og ved post test. Vi ser at det er liten forskjell i starten av trenings intervensjonen, før en ser at de som har trent flere sett har en større økning.
+
+```{}
+```
+
+## Diskusjon
+
+Denne studien tar utgangspunkt i 43 personer med relativt liten erfaring ved styrketrening. Disse kan betraktes som rrelativt utrente når de bare hadde en økt i uken før de begynte med denne 12 uker lange studien. Studien ser på flere variabler som er interessant for utrente personer. Vi kan konkludere med at vi ser en framgang både ved enkle eller flere sett med styrketrening på 1 RM, noe som samsvarer med funnene til [@kraemer_varied_1995], [@schlumberger_single-_2001], [@kelly2007]. Vi ser at vi får en signifikant forskjell i den fettfrie masse (0,03) mellom det å trene enkle sett vs. det å trene flere sett. No som vi i sammenheng med at vis ser vekten til forsøksperiodene går ned gjennom treningsperioden. Vi kan med utgangspunkt i denne studien si at dersom en ønsker en raske framgang vil det det være fordelaktig å trene flere sett. Dette gjelder både for det å bli sterke men også det å kunne skape en større fett fri masse som vil være positivt for kroppsvekten hos utrente personer[@raastad2010].
 
 ## Referanser

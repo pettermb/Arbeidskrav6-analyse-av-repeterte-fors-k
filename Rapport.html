@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Petter M. Blindheim">
 
 <title>Arbeidskrav 6: Analyse av repeterte forsøk</title>
 <style>
@@ -20,41 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="Rapport_files/libs/clipboard/clipboard.min.js"></script>
@@ -86,6 +72,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Petter M. Blindheim </p>
+          </div>
+  </div>
     
   
     
@@ -96,60 +88,564 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduksjon" class="level2">
 <h2 class="anchored" data-anchor-id="introduksjon">Introduksjon</h2>
-<p>Introdusere felt med</p>
-<p>Målet med denne studien:</p>
-<p>Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrophy og fibertype samensetning. Når personen gjennomføre denne styrkeprotokollen, så ønsket en å sammenligne effekten av de to volumbetingelsene på fosforylering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA.</p>
+<p>Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrofi og fibertype sammensetning. For å kunne ha en bedre forståelse for hva som skjer i disse tilfellene ønsker en også å sammenligne effekten av de to volumbetingelsene på fosforylering av proteiner som er relatert til mTORC1 - banen. En ville også se på overflod av totalt RNA, ribosomalt RNA og utvalgt mRNA. Dette vill alle gi oss en bedre forstålese i for utviklingen i det å trene enkle og flere sett trening.</p>
+<p>I dag er det mye informasjon om trening der ute. Det er podekaster, ulike sosiale medier kanaler og det er selvopplevde erfaringer. Men det viktigste vi har å støtte oss på er forskingen som er med på å drive nye treningsmetoder framover. Denne studien tar for seg hva skjer viss en trener forskjellig antall sett i styrketrening, men hva seier litteraturen oss om dette emnet? Det er gjort en del tidligere forsking på hvordan en skal bygge opp sine styrke økter. Før vi kan diskutere om det er forskjell mellom ulike sett, så er det viktig å understreke hva vi er ute etter. Vi ønsker her å se på hva som gir en best framgang for trening, ikke om det gir framskritt eller ikke. Når vi ser forskjellen på 1 sett og 3 sett så er det tre sett som skaper en best framgang i 1 RM <span class="citation" data-cites="kramer_effects_1997">(<a href="#ref-kramer_effects_1997" role="doc-biblioref">Kramer et al. 1997</a>)</span>, <span class="citation" data-cites="kelly_effect_2007">(<a href="#ref-kelly_effect_2007" role="doc-biblioref">Kelly et al. 2007a</a>)</span> , <span class="citation" data-cites="radaelli_dose-response_2015">(<a href="#ref-radaelli_dose-response_2015" role="doc-biblioref">Radaelli et al. 2015</a>)</span> . Vi ser også at det er studier som har sett på enkle vs.&nbsp;flere sett der forsøkspersonen består i sin helhet av kvinner. I den ene studien viste ikke en like klar framgang som studien med mannlige forsøkspersoner. Studien viste framgang i 1RM for begge gruppen som både enkle sett og flere sett. Men vi må i denne studien stille spørsmål om det er forskjell mellom kvinner og menn. Men denne rapporten inneholder en svak statistisk del, som gjør at det er usikker med å trekke konklusjoner ut fra denne rapporten [<span class="citation" data-cites="kraemer_varied_1995">Kraemer et al. (<a href="#ref-kraemer_varied_1995" role="doc-biblioref">1995</a>)</span>]. Men ser vi på studier med kvinner som er gjort med en erfaring innenfor styrke. Finner vi noe av de samme resultatene som vi ser hos menn. I et hel kropps program så en at fikk en overlegen styrke forbedring hos de som trente 3 sett i sammenligning med 1 sett <span class="citation" data-cites="schlumberger_single-_2001">(<a href="#ref-schlumberger_single-_2001" role="doc-biblioref">Schlumberger, Stec, and Schmidtbleicher 2001</a>)</span>.</p>
 </section>
 <section id="metode" class="level2">
 <h2 class="anchored" data-anchor-id="metode">Metode</h2>
 <section id="deltakere" class="level3">
 <h3 class="anchored" data-anchor-id="deltakere">Deltakere</h3>
-<p>For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn en styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening</p>
+<p>For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn 1 styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="ymzuanminy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ymzuanminy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ymzuanminy thead, #ymzuanminy tbody, #ymzuanminy tfoot, #ymzuanminy tr, #ymzuanminy td, #ymzuanminy th {
+  border-style: none;
+}
+
+#ymzuanminy p {
+  margin: 0;
+  padding: 0;
+}
+
+#ymzuanminy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ymzuanminy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ymzuanminy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ymzuanminy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ymzuanminy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ymzuanminy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ymzuanminy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ymzuanminy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ymzuanminy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ymzuanminy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ymzuanminy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ymzuanminy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ymzuanminy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ymzuanminy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ymzuanminy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymzuanminy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ymzuanminy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ymzuanminy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ymzuanminy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymzuanminy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ymzuanminy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymzuanminy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ymzuanminy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymzuanminy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ymzuanminy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymzuanminy .gt_left {
+  text-align: left;
+}
+
+#ymzuanminy .gt_center {
+  text-align: center;
+}
+
+#ymzuanminy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ymzuanminy .gt_font_normal {
+  font-weight: normal;
+}
+
+#ymzuanminy .gt_font_bold {
+  font-weight: bold;
+}
+
+#ymzuanminy .gt_font_italic {
+  font-style: italic;
+}
+
+#ymzuanminy .gt_super {
+  font-size: 65%;
+}
+
+#ymzuanminy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ymzuanminy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ymzuanminy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ymzuanminy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ymzuanminy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ymzuanminy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ymzuanminy .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Forsøkspersoner</caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="time">time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Alder<br><small>(år)">Alder<br><small>(år)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Høgde<br><small>(cm)">Høgde<br><small>(cm)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Vekt<br><small>(kg)">Vekt<br><small>(kg)</small></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="time" class="gt_row gt_left">post</td>
+<td headers="Alder" class="gt_row gt_right">NA</td>
+<td headers="Høgde" class="gt_row gt_right">175.40</td>
+<td headers="Vekt" class="gt_row gt_right">72.50</td></tr>
+    <tr><td headers="time" class="gt_row gt_left">pre</td>
+<td headers="Alder" class="gt_row gt_right">22.91</td>
+<td headers="Høgde" class="gt_row gt_right">174.96</td>
+<td headers="Vekt" class="gt_row gt_right">70.57</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
 </section>
 <section id="trenings-intervensjon" class="level3">
 <h3 class="anchored" data-anchor-id="trenings-intervensjon">Trenings intervensjon</h3>
-<p>For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, situps og back-exstensions og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.</p>
+<p>For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, sit-ups og rygg hev i maskin og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse.</p>
 </section>
 <section id="tester" class="level3">
 <h3 class="anchored" data-anchor-id="tester">Tester</h3>
-<p>For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsier av muskelvev, immunhistokjemi, protein uthening</p>
+<p>For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsi av muskel vev, immunhistokjemi, protein analyse.</p>
+<section id="muskelstyrke" class="level4">
+<h4 class="anchored" data-anchor-id="muskelstyrke">Muskelstyrke</h4>
+<p>For å teste den ensidige isokinetiske og isometriske muskelstyrken ble det brukt dynamometer. Den iskinetic torken ble målt med tre vinkel hastigheter på 60 grader, 120 og 140 grader. For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.</p>
+<p>Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet separat i beinpress maskin. Det ble også gjort 1 RM kne ekstensjons maskin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste</p>
+</section>
+<section id="muskel-tverrsnitt-og-kroppsamesetning" class="level4">
+<h4 class="anchored" data-anchor-id="muskel-tverrsnitt-og-kroppsamesetning">Muskel tverrsnitt og kroppsamesetning</h4>
+<p>En var i denne studien heldig å fikk bruke MRI til å undersøker tverrsnittet av kneekstensorene. En så i dette tilfellet på vastus lateralis, medjalis, intermedius og rectus femoris. Dette ble gjort både før og etter trenings intervensjonen. En fikk analysert analyse av personenes kropp sammensetning ved bruk av DXA. Før både DXA og MRI ble forsøkspersonen bedt å faste for 2 timer og ingen hard fysisk aktivitet 48 timer før testene.</p>
+</section>
+<section id="måling-av-hormoner" class="level4">
+<h4 class="anchored" data-anchor-id="måling-av-hormoner">Måling av hormoner</h4>
+<p>En gjorde hormonelle målinger ut i fra blodprøver tatt på 5 tidspunkt samtidig som biopsi og 10 min etter den siste treningsøkten. Etter å ha vert i romtemperatur i 30 min, ble de sentrifugert (1500 g, 10 min) Etter sentrifugering ble serumet umiddelbart ali kvotert og fryst ned til -80 grader. En gjorde målinger av blodprøvene i en Immunoassay System. Her ble det gjort målinger av totalt testosteron, kortisol, vekst hormon og insulin lik vekst faktor 1(IGF-1). Det blei også gjort prøver for å anslå vitamin D både før og etter styrketreningintervensjonen.</p>
+</section>
+<section id="muskel-biopsi" class="level4">
+<h4 class="anchored" data-anchor-id="muskel-biopsi">Muskel biopsi</h4>
+<p>Biopis ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsi instrument(Bård Magnum, Bård, Rud, Norway). Det ble gjort tiltak for å sikre en best mulig rehabilitere, med prøver på samme tidspunkt og at en hadde standardisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort</p>
+</section>
 </section>
 <section id="dataanalyse-og-statistikk" class="level3">
 <h3 class="anchored" data-anchor-id="dataanalyse-og-statistikk">Dataanalyse og statistikk</h3>
+<p>Forsøkspersoner som ikke gjennomførte helle treningsperioden, ble ikke inkludert fra den statistiske analysen i etterkant av treningsperioden. Det ble brukt tosidig t-test for å sjekke forskjellene mellom gruppen som trente enkle sett og flere sett. Grafene ble framstilt som gjennomsnitt verdier med stander avvik.</p>
 </section>
 </section>
 <section id="resultat" class="level2">
 <h2 class="anchored" data-anchor-id="resultat">Resultat</h2>
+<p>Når vi skal se på på resultatene i denne studien må vi ta med oss karakteristikkene til forsøksperiodene, der vi ser utviklingen av gjennomsnitts vekt fra pre til post. Denne må vi se i sammenheng med Figur 1 under som beskrive utviklingen i fett fri masse. Vi at forsøkspersonenes vekt blir mindre gjennom prosjektet. Dette kan vi se med at den fettfrie massen øker, gjennom hele prosjektet.</p>
+<p>Med en p - verdi på 0,0359 kan vi se en signifikant forskjell mellom det å trene enkle sett og det å trene flere sett.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Rapport_files/figure-html/Figur%201%20Fettfri%20masse-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Rapport_files/figure-html/Figur%202%20Utvikling%201%20RM%20knee%20ekstensjon-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>I figuren over ser vi 1 RM verdier i kne ekstensjon der en har gjort tester ved pre test, økt 1, i trenings uke 2, 5 og 9 og ved post test. Vi ser at det er liten forskjell i starten av trenings intervensjonen, før en ser at de som har trent flere sett har en større økning.</p>
+<pre><code></code></pre>
 </section>
 <section id="diskusjon" class="level2">
 <h2 class="anchored" data-anchor-id="diskusjon">Diskusjon</h2>
+<p>Denne studien tar utgangspunkt i 43 personer med relativt liten erfaring ved styrketrening. Disse kan betraktes som rrelativt utrente når de bare hadde en økt i uken før de begynte med denne 12 uker lange studien. Studien ser på flere variabler som er interessant for utrente personer. Vi kan konkludere med at vi ser en framgang både ved enkle eller flere sett med styrketrening på 1 RM, noe som samsvarer med funnene til <span class="citation" data-cites="kraemer_varied_1995">(<a href="#ref-kraemer_varied_1995" role="doc-biblioref">Kraemer et al. 1995</a>)</span>, <span class="citation" data-cites="schlumberger_single-_2001">(<a href="#ref-schlumberger_single-_2001" role="doc-biblioref">Schlumberger, Stec, and Schmidtbleicher 2001</a>)</span>, <span class="citation" data-cites="kelly2007">(<a href="#ref-kelly2007" role="doc-biblioref">Kelly et al. 2007b</a>)</span>. Vi ser at vi får en signifikant forskjell i den fettfrie masse (0,03) mellom det å trene enkle sett vs.&nbsp;det å trene flere sett. No som vi i sammenheng med at vis ser vekten til forsøksperiodene går ned gjennom treningsperioden. Vi kan med utgangspunkt i denne studien si at dersom en ønsker en raske framgang vil det det være fordelaktig å trene flere sett. Dette gjelder både for det å bli sterke men også det å kunne skape en større fett fri masse som vil være positivt for kroppsvekten hos utrente personer<span class="citation" data-cites="raastad2010">(<a href="#ref-raastad2010" role="doc-biblioref">Raastad et al. 2010</a>)</span>.</p>
 </section>
-<section id="referanser" class="level2">
-<h2 class="anchored" data-anchor-id="referanser">Referanser</h2>
-</section>
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-</section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<section id="referanser" class="level2 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referanser</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-kelly_effect_2007" class="csl-entry" role="listitem">
+Kelly, Stephen B., Lee E. Brown, Jared W. Coburn, Steven M. Zinder, Lisa M. Gardner, and Diamond Nguyen. 2007a. <span>“<span>THE</span> <span>EFFECT</span> <span>OF</span> <span>SINGLE</span> <span>VERSUS</span> <span>MULTIPLE</span> <span>SETS</span> <span>ON</span> <span>STRENGTH</span>:”</span> <em>Journal of Strength and Conditioning Research</em> 21 (4): 1003–6. <a href="https://doi.org/10.1519/00124278-200711000-00003">https://doi.org/10.1519/00124278-200711000-00003</a>.
+</div>
+<div id="ref-kelly2007" class="csl-entry" role="listitem">
+———. 2007b. <span>“THE EFFECT OF SINGLE VERSUS MULTIPLE SETS ON STRENGTH:”</span> <em>Journal of Strength and Conditioning Research</em> 21 (4): 1003–6. <a href="https://doi.org/10.1519/00124278-200711000-00003">https://doi.org/10.1519/00124278-200711000-00003</a>.
+</div>
+<div id="ref-kraemer_varied_1995" class="csl-entry" role="listitem">
+Kraemer, William J., R. U. Newton, J. Bush, J. Volek, N. T. Triplett, and L. P. Koziris. 1995. <span>“<span>VARIED</span> <span>MULTIPLE</span> <span>SET</span> <span>RESISTANCE</span> <span>TRAINING</span> <span>PROGRAM</span> <span>PRODUCES</span> <span>GREATER</span> <span>GAINS</span> <span>THAN</span> <span>SINGLE</span> <span>SET</span> <span>PROGRAM</span>: 1096.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 27 (Supplement): S195. <a href="https://doi.org/10.1249/00005768-199505001-01096">https://doi.org/10.1249/00005768-199505001-01096</a>.
+</div>
+<div id="ref-kramer_effects_1997" class="csl-entry" role="listitem">
+Kramer, James B., Michael H. Stone, Harold S. O’Bryant, Michael S. Conley, Robert L. Johnson, David C. Nieman, Darren R. Honeycutt, and Thomas P. Hoke. 1997. <span>“Effects of <span>Single</span> Vs. <span>Multiple</span> <span>Sets</span> of <span>Weight</span> <span>Training</span>: <span>Impact</span> of <span>Volume</span>, <span>Intensity</span>, and <span>Variation</span>.”</span> <em>The Journal of Strength and Conditioning Research</em> 11 (3): 143. <a href="https://doi.org/10.1519/1533-4287(1997)011<0143:EOSVMS>2.3.CO;2">https://doi.org/10.1519/1533-4287(1997)011&lt;0143:EOSVMS&gt;2.3.CO;2</a>.
+</div>
+<div id="ref-raastad2010" class="csl-entry" role="listitem">
+Raastad, Truls, Paulsen, Gøran, Refsnes, Per Egil, Rønnestad, Bent R., and Wisnes, Alexander R. 2010. <em>Styrketrening: i teori og praksis</em>. 1st ed. Oslo: Gyldendal Norsk forlag.
+</div>
+<div id="ref-radaelli_dose-response_2015" class="csl-entry" role="listitem">
+Radaelli, Regis, Steven J. Fleck, Thalita Leite, Richard D. Leite, Ronei S. Pinto, Liliam Fernandes, and Roberto Simão. 2015. <span>“Dose-<span>Response</span> of 1, 3, and 5 <span>Sets</span> of <span>Resistance</span> <span>Exercise</span> on <span>Strength</span>, <span>Local</span> <span>Muscular</span> <span>Endurance</span>, and <span>Hypertrophy</span>.”</span> <em>Journal of Strength and Conditioning Research</em> 29 (5): 1349–58. <a href="https://doi.org/10.1519/JSC.0000000000000758">https://doi.org/10.1519/JSC.0000000000000758</a>.
+</div>
+<div id="ref-schlumberger_single-_2001" class="csl-entry" role="listitem">
+Schlumberger, A., J. Stec, and D. Schmidtbleicher. 2001. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/11710652">Single- Vs. Multiple-Set Strength Training in Women</a>.”</span> <em>Journal of Strength and Conditioning Research</em> 15 (3): 284–89.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
